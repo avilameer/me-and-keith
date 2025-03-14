@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHeartKeith</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .image-card {
+            width: 100%;
+            max-width: 340px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            cursor: pointer; /* Cursor pointer untuk interaksi */
+        }
+
+        .image-card img {
+            width: 100%;
+            display: block;
+        }
+
+        .image-card .title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            padding: 10px 0 2px;
+        }
+
+        .image-card .subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            color: #666;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Foto + Judul Lagu & Artis -->
+    <div class="image-card" onclick="goToTextPage()">
+        <img src="mybf.jpg" alt="Gambar">
+        <div class="title">Crashing Down</div>
+        <div class="subtitle">d4vd, Kali Uchis</div>
+    </div>
+
+    <script>
+        // Fungsi untuk mengarahkan ke halaman kedua saat gambar diklik
+        function goToTextPage() {
+            window.location.href = 'savior.html'; // Arahkan ke halaman kedua
+        }
+    </script>
+
+</body>
+</html>
